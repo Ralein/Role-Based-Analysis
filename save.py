@@ -3,7 +3,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 
 def analyze_role(role_name):
-    client = genai.Client(api_key="AIzaSyCCRmvrv43cgLSCwxVmP6iBkhuiI5VT7UY")
+    client = genai.Client(api_key="Enter your API KEY")
     prompt = (
         f"Tell me everything about the role of a {role_name} in IT – "
         "include required skills (technical & soft), tools used, experience level, "
