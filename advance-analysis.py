@@ -7,7 +7,7 @@ from rich.markdown import Markdown
 
 def get_api_url():
     # Default to local Ollama instance; adjust as needed
-    return os.getenv("OLLAMA_API_URL", "http://10.10.99.24:11434/api/generate")
+    return os.getenv("OLLAMA_API_URL", "http://localhost:11434/api/generate")
 
 def validate_role_name(role_name):
     if not role_name or len(role_name) < 2 or len(role_name) > 100:
